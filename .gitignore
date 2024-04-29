@@ -1,0 +1,13 @@
+# Node artifact files
+node_modules
+cypress/downloads
+screenshots
+fixture
+allure-results
+allure-report
+
+#variable
+.env
+
+# Large media files
+*.mp4

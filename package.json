@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "@faker-js/faker": "8.4.1",
+    "@shelex/cypress-allure-plugin": "2.40.2",
+    "cypress": "13.8.1",
+    "eslint-plugin-cypress": "3.0.2"
+  },
+  "scripts": {
+    "lint": "eslint cypress/**/*.js",
+    "lint-fix": "npm run lint -- --fix",
+    "cy:report": "cypress run -e allure=true",
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run --e2e --browser chrome"
+  }
+}
