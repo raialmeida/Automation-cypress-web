@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 11 19:14:51 GMT 2024","Wed Sep 11 19:14:53 GMT 2024","2246","Cadastrar Usuário","","","","","Cadastrar novo usuário",""
+"passed","Wed Sep 11 19:15:01 GMT 2024","Wed Sep 11 19:15:07 GMT 2024","5749","Tranferência de valores para outra conta","","","","","Transferir R$100 com saldo insuficiente",""
+"passed","Wed Sep 11 19:14:55 GMT 2024","Wed Sep 11 19:15:01 GMT 2024","6169","Tranferência de valores para outra conta","","","","","Transferir R$100 para conta Teste com saldo",""
