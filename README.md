@@ -8,9 +8,11 @@ Informações básicas para realizar a instalação das tecnologias e configura�
 
 **Plataforma**: Click para consultar a plataforma [BugBank](https://bugbank.netlify.app/) plataforma de transferência de valores.
 
+Para acessar o allure report [click aqui](https://raialmeida.github.io/Automation-cypress-web/)
+
 ## Dependências utilizado com cypress no projeto.
 
-+ [Allure Report](https://github.com/Shelex/cypress-allure-plugin)
++ [Allure Report](https://allurereport.org/docs/cypress/)
 + [cypress/grep](https://www.npmjs.com/package/@cypress/grep)
 + [Faker](https://fakerjs.dev/)
 + [Cypress ESLint Plugin](https://github.com/cypress-io/eslint-plugin-cypress)
@@ -47,18 +49,15 @@ npm run cy:run
 npx cypress run -e grepTags=@tag
 ```
 
-### Para executar os testes com report Allure, execute no terminal:
+### Para executar o report Allure, execute no terminal:
 
-```
-npx cypress run -e allure=true
-```
 
 Após a execução dos testes, execute os comando abaixo para gerar e abrir o report:
 ```
-allure generate
+npx allure generate
 ```
 ```
-allure open
+npx allure open
 ```
  
 ## Regras de Organização

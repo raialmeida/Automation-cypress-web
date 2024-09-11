@@ -1,4 +1,4 @@
-FROM cypress/base:18.14.1
+FROM cypress/base:20.17.0
 
 # Create Directory for the Container
 WORKDIR  /app

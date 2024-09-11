@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   cypress-front:
     image: cypress-with-cucumber

@@ -1,18 +1,23 @@
 const { defineConfig } = require("cypress");
-const allureWriter = require('@shelex/cypress-allure-plugin/writer')
+const { allureCypress } = require("allure-cypress/reporter")
+const os = require('os')
 
 module.exports = defineConfig({
   e2e: {
-    env: {
-      omitFiltered: true,
-      filterSpecs: true
-    },
     baseUrl: 'https://bugbank.netlify.app',
     video: false,
     fixturesFolder: false,
     setupNodeEvents(on, config) {
-      allureWriter(on, config)
+      allureCypress(on, {
+        environmentInfo: {
+          OS: os.platform,
+          OsVersion: os.version,
+          Architecture: os.arch,
+          NodeVersion: process.version,
+          UrlAPI: config.baseUrl,
+        }
+      })
       return config
     },
   },
-});
+})

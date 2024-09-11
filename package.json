@@ -1,16 +1,36 @@
 {
+  "name": "automation-cypress-web",
+  "version": "1.0.0",
+  "description": "Cypress Web",
+  "main": "cypress.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raialmeida/Automation-cypress-web.git"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Raí Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raialmeida/Automation-cypress-web/issues"
+  },
+  "homepage": "https://github.com/raialmeida/Automation-cypress-web#readme",
   "devDependencies": {
-    "@cypress/grep": "^4.0.1",
-    "@faker-js/faker": "8.4.1",
-    "@shelex/cypress-allure-plugin": "2.40.2",
-    "cypress": "13.8.1",
-    "eslint-plugin-cypress": "3.0.2"
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.0-beta.12",
+    "eslint": "^9.10.0",
+    "eslint-plugin-cypress": "^3.5.0"
   },
   "scripts": {
     "lint": "eslint cypress/**/*.js",
     "lint-fix": "npm run lint -- --fix",
-    "cy:report": "cypress run -e allure=true",
     "cy:open": "cypress open --e2e --browser chrome",
     "cy:run": "cypress run --e2e --browser chrome"
+  },
+  "dependencies": {
+    "@cypress/grep": "4.1.0",
+    "@faker-js/faker": "9.0.0",
+    "cypress": "13.14.2"
   }
 }
